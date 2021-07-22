@@ -2,9 +2,16 @@
 @import '_fontSizes'
 
 .navigation
+  position: fixed
+  width: 345px
+  bottom: 0
+  transform: translateY(100%)
+  transition: transform 0.2s
   padding: 20px
   border-radius: 20px
   background: linear-gradient(180deg, #19BEB4 0%, #59CA00 100%)
+  &.open
+    transform: translateY(0)
   .navigation-header
     font-size: $h1
     font-weight: bold
