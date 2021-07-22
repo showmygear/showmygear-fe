@@ -1,0 +1,17 @@
+@import '_colors'
+@import '_fontSizes'
+
+.progress-bar
+  position: relative
+  background: $gray
+  z-index: 1
+  width: 100%
+  &, &:after
+    height: 15px
+    border-radius: 15px
+  &:after
+    content: ''
+    position: absolute
+    background: $primary-color
+    width: 50%
+    z-index: 0
