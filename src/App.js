@@ -3,6 +3,7 @@ import './styles/root.sass';
 import Navigation from 'components/organisms/Navigation';
 import TrailIndex from 'components/pages/trailIndex';
 import ProfileIndex from 'components/pages/profileIndex';
+import ChecklistPage from 'components/pages/checklistPage';
 import LogoImg from 'images/logo.svg';
 
 const ShowMyGear = () => {
@@ -20,7 +21,13 @@ const ShowMyGear = () => {
         <img src={LogoImg} alt='ShowMyGear' />
       </div>
       {
-        active == 1 ? <ProfileIndex /> : <TrailIndex onClick={setActive} />
+        active == 0 ? <TrailIndex onClick={setActive} /> : null
+      }
+      {
+        active == 1 ? <ProfileIndex /> : null
+      }
+      {
+        active == 2 ? <ChecklistPage /> : null
       }
     </div>
   );

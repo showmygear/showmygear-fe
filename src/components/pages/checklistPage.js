@@ -1,4 +1,4 @@
-import Button from 'components/atoms/button';
+import Button from 'components/atoms/Button';
 
 const ChecklistPage = () => {
   const progress = 20
@@ -10,11 +10,11 @@ const ChecklistPage = () => {
       <div className='columns'>
         <div className='column-item'>
           <div className='emoji'>⛰</div>
-          <Button variant='default'>山岳路線</Button>
+          <Button variant='default' fullWidth>山岳路線</Button>
         </div>
         <div className='column-item'>
           <div className='emoji'>🗓</div>
-          <Button variant='default'>登山日期</Button>
+          <Button variant='default' fullWidth>登山日期</Button>
         </div>
       </div>
       <div className='text'>檢查表將以山岳與日期命名</div>
