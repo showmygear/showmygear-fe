@@ -1,4 +1,4 @@
-import Character from 'components/atoms/character'
+import Character from 'components/atoms/Character'
 
 const TrailUserCard = ({
   id,

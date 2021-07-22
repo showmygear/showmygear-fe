@@ -1,4 +1,4 @@
-import Character from 'components/atoms/character';
+import Character from 'components/atoms/Character';
 import TrailMountainCard from 'components/molecules/TrailMountainCard';
 import GearItem from 'components/molecules/GearItem';
 import ImgBackpack from 'images/gear-backpack.svg';

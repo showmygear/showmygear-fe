@@ -1,4 +1,4 @@
-import Input from 'components/atoms/input';
+import Input from 'components/atoms/Input';
 import TrailUserCard from 'components/molecules/TrailUserCard';
 
 const trailItems = [
