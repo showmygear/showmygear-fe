@@ -7,4 +7,15 @@ module.exports = {
       ],
     },
   },
+  webpack: {
+  configure: function(webpackConfig) {
+    const fragLoader = {
+      test: /\.frag$/,
+      use: ['raw-loader']
+    };
+
+    addBeforeLoader(webpackConfig, loaderByName("file-loader"), fragLoader );
+
+    return webpackConfig;
+  },
 }
