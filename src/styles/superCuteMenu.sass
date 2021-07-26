@@ -1,0 +1,35 @@
+@import '_colors'
+@import '_fontSizes'
+
+.super-cute-menu
+  display: flex
+  justify-content: space-between
+  position: fixed
+  left: 20px
+  right: 20px
+  margin-left: auto
+  margin-right: auto
+  width: 345px
+  bottom: 20px
+  cursor: pointer
+  z-index: 3
+
+.super-cute-item
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  opacity: 0.3
+  .label
+    font-weight: bold
+    font-size: $body
+    margin-top: 5px
+  &.is-active
+    opacity: 1
+  &.hint
+   &:after
+    content: '❓'
+    position: absolute
+    bottom: 100%
+    left: auto
+    right: auto
