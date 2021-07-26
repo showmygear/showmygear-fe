@@ -1,10 +1,11 @@
 import Button from 'components/atoms/Button';
+import Header from 'components/organisms/Header';
 
-const ChecklistPage = () => {
+const ChecklistPage = ({ setActive }) => {
   const progress = 20
   return (
     <div className='check-list-page'>
-      <div className='title'>新增檢查表</div>
+      <Header title='新增檢查表' onCancel={()=>setActive(0)} />
       <div>完成度 {progress}%</div>
       <div className='text'>可以從任一個類別開始填寫</div>
       <div className='columns'>
