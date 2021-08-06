@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './styles/root.sass';
 import Navigation from 'components/organisms/Navigation';
-import SuperCuteMenu from 'components/organisms/SuperCuteMenu';
-import TrailIndex from 'components/pages/trailIndex';
-import ProfileIndex from 'components/pages/profileIndex';
-import ChecklistPage from 'components/pages/checklistPage';
+import TrailIndex from 'components/pages/TrailIndex';
+import ProfileIndex from 'components/pages/ProfileIndex';
+import ChecklistPage from 'components/pages/ChecklistPage';
+import SelectGearPage from 'components/pages/SelectGearPage';
 import LogoImg from 'images/logo.svg';
 
 const ShowMyGear = () => {
@@ -15,12 +15,12 @@ const ShowMyGear = () => {
   const [isOpen, setOpen] = useState(false);
 
   // TODO: Change background color in sass or layout?
-  const bgColor = active === 2 ? '#e1dcce' : '#fefefe';
+  const bgColor = active >= 2 ? '#e1dcce' : '#fefefe';
 
   return (
     <div className='layout' style={{ background: bgColor }}>
       {
-        active === 2 ? null :
+        active >= 2 ? null :
           <>
             <Navigation
               userName='鹿野忠雄'
@@ -42,6 +42,9 @@ const ShowMyGear = () => {
       }
       {
         active === 2 ? <ChecklistPage setActive={setActive} /> : null
+      }
+      {
+        active === 3 ? <SelectGearPage /> : null
       }
     </div>
   );

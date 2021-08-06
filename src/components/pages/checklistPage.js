@@ -20,7 +20,7 @@ const ChecklistPage = ({ setActive }) => {
       </div>
       <div className='text'>檢查表將以山岳與日期命名</div>
       <div>
-        <Button variant='default' fullWidth>行走裝備</Button>
+        <Button variant='default' fullWidth onClick={()=>setActive(3)}>行走裝備</Button>
         <div className='text'>行走時使用的裝備</div>
       </div>
       <div>
