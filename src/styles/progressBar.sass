@@ -1,17 +1,20 @@
 @import '_colors'
 @import '_fontSizes'
 
+.progress-bar-wrapper
+  .title
+    font-weight: bold
+    margin-bottom: 4px
+
 .progress-bar
   position: relative
-  background: $gray
-  z-index: 1
+  background: rgba($gray, 0.3)
   width: 100%
-  &, &:after
+  &, .bar
     height: 15px
     border-radius: 15px
-  &:after
-    content: ''
+
+  .bar
     position: absolute
-    background: $primary-color
-    width: 50%
-    z-index: 0
+    background: $gradient
+    z-index: 1
