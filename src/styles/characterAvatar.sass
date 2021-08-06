@@ -1,0 +1,28 @@
+@import '_colors'
+@import '_fontSizes'
+
+.character-avatar
+  position: relative
+  width: 100px
+  height: 100px
+  border-radius: 100px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: $gradient
+  &.small
+    width: 70px
+    height: 70px
+  .character
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+    margin: auto
+  .character-avatar-name
+    color: white
+    opacity: 0.5
+    font-weight: bold
+    text-align: center

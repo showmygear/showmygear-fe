@@ -111,6 +111,7 @@ const Character = ({
       // width='300'
       // height='821'
       id={`character-${id}`}
+      className='character'
       style={{width: width ?? '100%' }}
       viewBox='0 0 353 821'
       fill='none'
